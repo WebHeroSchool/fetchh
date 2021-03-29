@@ -1,7 +1,7 @@
 let body = document.body;
 let url = window.location.toString();
 
-const getNameUrl = (url) => {
+const getNameFromUrl = (url) => {
   let getUrl = url.split('=');
   let nameUrl = getUrl[1];
   if(nameUrl == undefined) {
@@ -10,9 +10,9 @@ const getNameUrl = (url) => {
 return nameUrl;
 }
 
-fetch(` https://api.github.com/users/${getNameUrl(url)}`)
-  .then(res => res.json())
-  .then(json => {
+fetch(` https://api.github.com/users/${getNamefromUrl(url)}`)
+  .then(res =>> res.json())
+  .then(json =>> {
     console.log(json.avatar_url);
     console.log(json.name);
     console.log(json.bio);
