@@ -3,7 +3,7 @@ let url = window.location.toString();
 
 const getNameUrl = (url) => {
   let getUrl = url.split('=');
-  let nameUrl = getUrl[1]; //
+  let nameUrl = getUrl[1];
   if(nameUrl == undefined) {
   nameUrl = 'GanievaKarina';
   }
