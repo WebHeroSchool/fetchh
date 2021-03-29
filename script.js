@@ -11,8 +11,8 @@ return nameUrl;
 }
 
 fetch(` https://api.github.com/users/${getNamefromUrl(url)}`)
-  .then(res =>> res.json())
-  .then(json =>> {
+  .then(res => res.json())
+  .then(json => {
     console.log(json.avatar_url);
     console.log(json.name);
     console.log(json.bio);
