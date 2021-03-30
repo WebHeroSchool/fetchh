@@ -7,10 +7,10 @@ const getNameFromUrl = (url) => {
   if (nameUrl == undefined) {
     nameUrl = "GanievaKarina";
   }
-  return "Persovt";
+  return nameUrl;
 };
 
-fetch(` https://api.github.com/users/Persovt`)
+fetch(` https://api.github.com/users/${getNameFromUrl(url)}`)
   .then((res) => res.json())
   .then((json) => {
     console.log(json.avatar_url);
