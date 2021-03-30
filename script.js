@@ -10,7 +10,7 @@ const getNameFromUrl = (url) => {
   return nameUrl;
 };
 
-fetch(` https://api.github.com/users/${getNameFromUrl(url)}`)
+fetch(` https://api.github.com/users/GanievaKarina`)
   .then((res) => res.json())
   .then((json) => {
     console.log(json.avatar_url);
@@ -20,7 +20,7 @@ fetch(` https://api.github.com/users/${getNameFromUrl(url)}`)
 
     // let photo = new Photo();
     // photo.scr = json.avatar_url;
-    // body.append(photo);
+    body.append(json.avatar_url);
 
 console.log(text)
     if (json.name != null) {
