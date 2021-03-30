@@ -18,9 +18,9 @@ fetch(` https://api.github.com/users/${getNamefromUrl(url)}`)
     console.log(json.bio);
     console.log(json.html_url);
 
-    let photo = new Photo();
-    photo.scr = json.avatar_url;
-    body.append(photo);
+    //let photo = new Photo();
+  //  photo.scr = json.avatar_url;
+  //  body.append(photo);
 
     let name = document.createElement('p');
     if (json.name != null){
