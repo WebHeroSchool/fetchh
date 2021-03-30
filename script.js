@@ -18,9 +18,9 @@ fetch(` https://api.github.com/users/GanievaKarina`)
     console.log(json.bio);
     console.log(json.html_url);
 
-    // let photo = new Photo();
-    // photo.scr = json.avatar_url;
-    body.append(json.avatar_url);
+    let photo = new Image();
+    photo.scr = json.avatar_url;
+    body.append(photo);
 
 console.log(text)
     if (json.name != null) {
